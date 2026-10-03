@@ -40,11 +40,20 @@ main div {
     margin-inline: auto;
     width: 96px;
     rotate: 7deg;
-    translate: 35px 70px;
     
     /* animation: 1s ease 0s alternate infinite faituntour;*/
 }
 
+.mon-element-anime {
+ animation: 1s ease 0s alternate infinite faituntour;
+}
+@keyframes faituntour {
+ 0% { rotate: 0deg;}
+ 100% { rotate: 180deg;}
+ translate: 35px 70px;
+opacity: 0.4;
+
+}
 
 /*
 @keyframes faituntour {
