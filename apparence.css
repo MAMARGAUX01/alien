@@ -1,0 +1,59 @@
+html,
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #131b22;
+    color: #d7eafa;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding-block: 24px;
+}
+
+main div {
+    flex: 1;
+}
+
+.conteneur-image {
+    position: relative;
+    max-width: 440px;
+}
+
+#socupe {
+    z-index: 200;
+}
+
+#page {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
+    margin-inline: auto;
+    width: 96px;
+    rotate: 7deg;
+    /* animation: 1s ease 0s alternate infinite faituntour;*/
+}
+
+
+/*
+@keyframes faituntour {
+  0% { rotate: 0deg;}
+  100% { rotate: 180deg;}
+}
+*/
+
+@media (width<=860px) {
+    main {
+        padding-inline: 16px;
+        flex-direction: column;
+    }
+}
